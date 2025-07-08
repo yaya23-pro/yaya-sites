@@ -354,31 +354,38 @@ footer .div3 p:last-child {
     color: #999;
     margin-top: 10px;
 }
-/* 📱 Responsive mobile (moins de 768px) */
+/* ------------------------------
+   Responsive complet mobile/tablette
+------------------------------ */
+
+/* 📱 Mobile (max 768px) */
 @media screen and (max-width: 768px) {
-  /* Enlever le fix inutile si présent */
+  /* Header */
   header {
     position: relative !important;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    text-align: center;
   }
 
   .menu {
     width: 100%;
-    text-align: center;
   }
 
   .menu ul {
+    display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
     gap: 10px;
+    list-style: none;
   }
 
   .menu_icone {
     width: 30px;
     height: auto;
+    margin: 0 auto 10px auto;
   }
 
   .logo {
@@ -398,9 +405,12 @@ footer .div3 p:last-child {
     font-size: 1em;
   }
 
-  .YAYA {
+  /* Background après header */
+  section.YAYA {
+    margin-top: 80px;
+    padding: 20px 10px;
+    box-sizing: border-box;
     text-align: center;
-    padding: 20px;
   }
 
   .YAYA button {
@@ -408,6 +418,7 @@ footer .div3 p:last-child {
     font-size: 1.2em;
   }
 
+  /* Sections avec listes d’éléments en flex */
   .foods-list,
   .little-food_box,
   .fidelity_pro {
@@ -431,23 +442,8 @@ footer .div3 p:last-child {
     height: auto;
   }
 
-  footer .div2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .div2 > div {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  footer .div1 img {
-    width: 130px;
-    margin: 5px;
-  }
-
-  .icones_social i {
-    font-size: 1.5em;
-    margin: 0 10px;
-  }
-}
+  /* Footer */
+  footer .div1, 
+  footer .div2, 
+  footer .div3 {
+    width: 100% !import
