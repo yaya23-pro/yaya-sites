@@ -354,6 +354,99 @@ footer .div3 p:last-child {
     color: #999;
     margin-top: 10px;
 }
+/* ------------------------------
+   📱 Responsive pour mobile
+------------------------------ */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .header-end {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-end button {
+    width: 100%;
+  }
+
+  .YAYA button {
+    width: 90%;
+    font-size: 1.2em;
+  }
+
+  .foods-list,
+  .little-food_box,
+  .fidelity_pro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foods-list .box,
+  .little-food_box > div,
+  .fidelity_pro > div {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  footer .div2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .div2 > div {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  footer .div1 img {
+    width: 120px;
+    margin: 5px;
+  }
+}
+
+
+/* ------------------------------
+   💻 Responsive pour tablettes
+------------------------------ */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .foods-list,
+  .little-food_box,
+  .fidelity_pro {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .foods-list .box,
+  .little-food_box > div,
+  .fidelity_pro > div {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .header-end {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
 
 
 
