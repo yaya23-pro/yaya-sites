@@ -354,30 +354,53 @@ footer .div3 p:last-child {
     color: #999;
     margin-top: 10px;
 }
-/* ------------------------------
-   📱 Responsive pour mobile
------------------------------- */
+/* 📱 Responsive mobile (moins de 768px) */
 @media screen and (max-width: 768px) {
+  /* Enlever le fix inutile si présent */
   header {
+    position: relative !important;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+  }
+
+  .menu {
+    width: 100%;
     text-align: center;
   }
 
   .menu ul {
     flex-direction: column;
-    gap: 10px;
     padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .menu_icone {
+    width: 30px;
+    height: auto;
+  }
+
+  .logo {
+    width: 120px;
+    margin: 10px 0;
   }
 
   .header-end {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
   }
 
   .header-end button {
-    width: 100%;
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .YAYA {
+    text-align: center;
+    padding: 20px;
   }
 
   .YAYA button {
@@ -388,15 +411,24 @@ footer .div3 p:last-child {
   .foods-list,
   .little-food_box,
   .fidelity_pro {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .foods-list .box,
   .little-food_box > div,
   .fidelity_pro > div {
     width: 90%;
-    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .foods-list img,
+  .little-food_box img,
+  .fidelity_pro img {
+    width: 100%;
+    height: auto;
   }
 
   footer .div2 {
@@ -410,52 +442,12 @@ footer .div3 p:last-child {
   }
 
   footer .div1 img {
-    width: 120px;
+    width: 130px;
     margin: 5px;
   }
-}
 
-
-/* ------------------------------
-   💻 Responsive pour tablettes
------------------------------- */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .menu ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .foods-list,
-  .little-food_box,
-  .fidelity_pro {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .foods-list .box,
-  .little-food_box > div,
-  .fidelity_pro > div {
-    width: 45%;
-    margin: 10px;
-  }
-
-  .header-end {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  .icones_social i {
+    font-size: 1.5em;
+    margin: 0 10px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
